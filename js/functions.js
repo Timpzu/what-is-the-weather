@@ -1,6 +1,11 @@
 import API_KEY from './config.js';
 
 const responseMessage = document.getElementById("response-message");
+const weatherQuery = document.getElementById("weather-query");
+
+weatherQuery.addEventListener("change", () => {
+    console.log(weatherQuery.value);
+})
 
 if ("geolocation" in navigator) {
     navigator.geolocation.getCurrentPosition((position) => {

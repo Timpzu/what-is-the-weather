@@ -1,0 +1,27 @@
+body,html {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.weather-flex-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
+
+.weather-flex-content {
+    text-align: center;
+}
+
+.large-response {
+    font-size: 12rem;
+    font-weight: bold;
+    line-height: 1.1;
+    margin: 24px 0;
+}

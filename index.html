@@ -7,9 +7,19 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1>Millane sää ulkon?</h1>
-    <h2>Sataaks?</h2>
-    <p id="response-message"></p>
+    <div class="weather-flex-container">
+        <div class="weather-flex-content">
+            <h1>Millane sää ulkon?</h1>
+            <label for="weather-query">Mitä mitä?</label>
+            <select name="weather-query" id="weather-query" autocomplete="off">
+                <option value="none" selected disabled hidden>Valitte yks</option>
+                <option value="is-raining">Sataaks?</option>
+                <option value="is-dark">Onks pimeet jo?</option>
+                <option value="is-cold">Tartteeks takkii?</option>
+            </select>
+            <p id="response-message" class="large-response">NULL</p>
+        </div>
+    </div>
     <script type="module" src="js/functions.js"></script>
 </body>
 </html>
