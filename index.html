@@ -12,8 +12,11 @@
 <body>
     <div class="weather-flex-container">
         <div class="weather-flex-content">
-            <h1>Millane sää ulkon o?</h1>
-            <div class="query-container">
+            <header>
+                <p>Pori ÄLY-4o</p>
+                <h1>Millane sää ulkon o?</h1>
+            </header>
+            <main class="query-container">
                 <label for="weather-query" id="weather-query-label" class="sr-only">Valitte alasvetovalikost, mitä teikäläine haluu tiätää.</label>
                 <select name="weather-query" id="weather-query" autocomplete="off">
                     <option value="none" selected disabled hidden>Valitte yks</option>
@@ -23,10 +26,10 @@
                     <option value="is-cold">Tartteeks takkii?</option>
                     <!-- <option value="is-cold">Käyks siä kova tuuli?</option> -->
                 </select>
-                <p id="response-main" class="response-large">Tost noi 👆</p>
-                <p id="response-additional" class="response-small">Muist antaa selaime käyttää su sijaintii. Muute mää en ala! </p>
-                <p id="response-tertiary" class="response-small">...</p>
-            </div>
+                <p id="response-main" class="response-large">Kato?!</p>
+                <p id="response-additional" class="response-small"><strong>Vieläks sääki elät?</strong> Valitte tost ylhäält jottai ni mää katto su pualest ulos.</p>
+                <p id="response-tertiary" class="response-small">Ja koit ny sit antaa selaime käyttää sijaintii, muute mää en ala!</p>
+            </main>
             <footer id="feedback-footer">
                 <p id="feedback-text">An palautet</p>
                 <button id="positive-feedback">Vähäks hyvä</button>
