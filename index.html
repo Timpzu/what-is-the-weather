@@ -4,20 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <div class="weather-flex-container">
         <div class="weather-flex-content">
-            <h1>Millane sää ulkon?</h1>
-            <label for="weather-query">Mitä mitä?</label>
-            <select name="weather-query" id="weather-query" autocomplete="off">
-                <option value="none" selected disabled hidden>Valitte yks</option>
-                <option value="is-raining">Sataaks?</option>
-                <option value="is-dark">Onks pimeet jo?</option>
-                <option value="is-cold">Tartteeks takkii?</option>
-            </select>
-            <p id="response-message" class="large-response">NULL</p>
+            <h1>Millane sää ulkon o?</h1>
+            <div class="query-container">
+                <label for="weather-query" id="weather-query-label" class="sr-only">Valitte alasvetovalikost, mitä teikäläine haluu tiätää.</label>
+                <select name="weather-query" id="weather-query" autocomplete="off">
+                    <option value="none" selected disabled hidden>Valitte yks</option>
+                    <option value="is-dark">Joko o pimeet?</option>
+                    <!-- <option value="is-snow">Pääseeks hiihtää?</option> -->
+                    <option value="is-raining">Sataaks?</option>
+                    <option value="is-cold">Tartteeks takkii?</option>
+                    <!-- <option value="is-cold">Käyks siä kova tuuli?</option> -->
+                </select>
+                <p id="response-main" class="response-large">Tost noi 👆</p>
+                <p id="response-additional" class="response-small">Muist antaa selaime käyttää su sijaintii. Muute mää en ala! </p>
+                <p id="response-tertiary" class="response-small">...</p>
+            </div>
+            <footer id="feedback-footer">
+                <p id="feedback-text">An palautet</p>
+                <button id="positive-feedback">Vähäks hyvä</button>
+                <button id="negative-feedback">Iha paska</button>
+            </footer>
         </div>
     </div>
     <script type="module" src="js/functions.js"></script>
