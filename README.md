@@ -1,2 +1,2 @@
-# “Millane sää” - What's the Weather App
-“Millane sää” is a fun weather app. The idea is that you can ask the so-called artificial intelligence ready-made prompts about, for example, whether you need a jacket outside or if it's dark. It gives you a simple answer based on open weather data and location, but in a hillibilly Finnish dialect of “Pori” in a funny and witty way.
+# “Millane sää” Weather App
+“Millane sää” is a fun weather app that allows you to ask its quirky, not-so-artificial intelligence for ready-made prompts. For example, you can find out whether you need to wear a jacket outside or if it’s dark. The app provides simple answers based on open weather data and your location, delivered in a humorous, witty hillbilly Finnish dialect from Pori.
